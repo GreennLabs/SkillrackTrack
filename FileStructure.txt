@@ -1,0 +1,18 @@
+SkillrackTacker
+│── .dist
+│── .gitignore
+│── .vercel
+│   │── project.json
+│   └── README.txt
+│── api
+│   │── points.js
+│   └── trackwithbuddy.js
+│── App.js
+│── backup.txt
+│── final.txt
+│── firebase-messaging-sw.js
+│── firebase.js
+│── package.json
+│── PushNotification.js
+│── Schedule.js
+└── vercel.json
