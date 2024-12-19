@@ -962,11 +962,11 @@ function scheduleWhatsAppMessages() {
 //     }
 //   });
 // Start the server
-// const PORT = process.env.PORT || 4000;
-// app.listen(PORT, () => {
-//     console.log(`Server is running on port ${PORT}`);
-//     scheduleWhatsAppMessages(); 
-// });
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+    scheduleWhatsAppMessages(); 
+});
 // curl -X POST http://127.0.0.1:3000/api/points -H "Content-Type: application/json" -d "{\"url\": \"http://www.skillrack.com/profile/466648/ca102ea9fcbf53b1a5fe134f6d13364e723aab47\"}"
 module.exports = app;
 // curl -X POST http://127.0.0.1:4000/api/points -H "Content-Type: application/json" -d "{\"url\": \"http://www.skillrack.com/profile/466648/ca102ea9fcbf53b1a5fe134f6d13364e723aab47\"}"
