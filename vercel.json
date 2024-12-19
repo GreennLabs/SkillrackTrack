@@ -1,32 +1,35 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "App.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "apii/points.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "apii/trackwithbuddy.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/apii/points",
-        "dest": "/App.js"
-      },
-      {
-        "src": "/apii/trackwithbuddy",
-        "dest": "/App.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/App.js"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "App.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "apii/points.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "apii/trackwithbuddy.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/apii/points",
+      "dest": "/apii/points.js"
+    },
+    {
+      "src": "/apii/trackwithbuddy",
+      "dest": "/apii/trackwithbuddy.js"
+    },
+    {
+      "src": "/apii/sendwhatsapp",
+      "dest": "/App.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/App.js"
+    }
+  ]
+}
